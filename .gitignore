@@ -1,0 +1,21 @@
+# Visual Studio build output
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+Win32/
+[Bb]in/
+[Oo]bj/
+ipch/
+
+# Visual Studio per-user files
+*.vcxproj.user
+*.suo
+*.user
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.opendb

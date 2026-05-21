@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="discordquest/discordquest.vcxproj" Id="986e1fdf-6731-41a2-b3b4-ef3509a9f802" />
+</Solution>
