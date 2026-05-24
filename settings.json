@@ -4,17 +4,22 @@
     {
       "name": "Rune Dice",
       "path": "Rune Dice/Rune Dice.exe",
-      "seconds": 900
+      "seconds": 910
     },
     {
       "name": "Roblox",
       "path": "%LOCALAPPDATA%/Roblox/Versions/version-*/RobloxPlayerBeta.exe",
-      "seconds": 900
+      "seconds": 910
     },
     {
       "name": "Where Winds Meet",
       "path": "Win64r/wwm.exe",
-      "seconds": 900
+      "seconds": 910
+    },
+    {
+      "name": "Arknights: Endfield",
+      "path": "Game/Endfield.exe",
+      "seconds": 910
     }
   ]
 }
