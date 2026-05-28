@@ -20,6 +20,11 @@
       "name": "Arknights: Endfield",
       "path": "Game/Endfield.exe",
       "seconds": 910
+    },
+    {
+      "name": "Once Humasn",
+      "path": "Once Human/ONCE_HUMAN.exe",
+      "seconds": 910
     }
   ]
 }
