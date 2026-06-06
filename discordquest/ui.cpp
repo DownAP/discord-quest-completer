@@ -273,19 +273,21 @@ namespace
         int  selectedGame = -1;
         bool useCustom    = false;
         int  seconds      = 900;
+        char searchQuery[128] = "";
         char customName[128] = "";
         char customPath[512] = "";
     };
 
     void DrawQuestList(CompleterUI& ui)
     {
-        SmallCaps("AVAILABLE QUESTS");
-        ImGui::SameLine();
         {
-            const float bw = 78.0f;
-            ImGui::SetCursorPosX(ImGui::GetCursorPosX() +
-                                 ImGui::GetContentRegionAvail().x - bw);
-            if (ImGui::Button("Refresh", ImVec2(bw, 0)))
+            const float refreshW = 78.0f;
+            const float gap      = 6.0f;
+            ImGui::SetNextItemWidth(ImGui::GetContentRegionAvail().x - refreshW - gap);
+            ImGui::InputTextWithHint("##search", "Search quests...",
+                                     ui.searchQuery, sizeof(ui.searchQuery));
+            ImGui::SameLine(0, gap);
+            if (ImGui::Button("Refresh", ImVec2(refreshW, 0)))
                 StartSettingsLoad(ui.load);
         }
         ImGui::Separator();
@@ -311,9 +313,20 @@ namespace
                 ImGui::Dummy(ImVec2(0, 4));
             }
 
+            auto toLower = [](std::string s) {
+                for (auto& c : s)
+                    if (c >= 'A' && c <= 'Z') c = (char)(c - 'A' + 'a');
+                return s;
+            };
+            const std::string q = toLower(ui.searchQuery);
+
+            int matchCount = 0;
             for (int i = 0; i < (int)st.games.size(); ++i)
             {
                 const GameEntry& g = st.games[i];
+                if (!q.empty() && toLower(g.name).find(q) == std::string::npos)
+                    continue;
+                ++matchCount;
                 char badge[24];
                 std::snprintf(badge, sizeof(badge), "%d min", g.seconds / 60);
                 const bool sel = !ui.useCustom && ui.selectedGame == i;
@@ -323,6 +336,12 @@ namespace
                     ui.selectedGame = i;
                     ui.seconds      = g.seconds;
                 }
+            }
+
+            if (matchCount == 0 && !q.empty())
+            {
+                ImGui::Dummy(ImVec2(0, 6));
+                ImGui::TextColored(COL_MUTED, "No matching quests.");
             }
 
             if (GameCard(0x7FFF, "Custom path",

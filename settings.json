@@ -13,8 +13,10 @@
     { "name": "Delta Force",                "path": "Win64/DeltaForceClient-Win64-Shipping.exe",            "seconds": 910 },
     { "name": "Destiny 2",                  "path": "Destiny 2/destiny2.exe",                               "seconds": 910 },
     { "name": "Duet Night Abyss",           "path": "Duet Night Abyss/EM-Win64-Shipping.exe",               "seconds": 910 },
+    { "name": "EscapeTheBackrooms",         "path": "EscapeTheBackrooms/Binaries/Win64/Backrooms-Win64-Shipping.exe", "seconds": 910 },
     { "name": "Fallout 4",                  "path": "Fallout4/Fallout4.exe",                                "seconds": 910 },
     { "name": "Fallout 76",                 "path": "Fallout76/Fallout76.exe",                              "seconds": 910 },
+    { "name": "FC26",                       "path": "EA SPORTS FC 26/FC26.exe",                             "seconds": 910 },
     { "name": "Fortnite",                   "path": "Win64/FortniteClient-Win64-Shipping.exe",              "seconds": 910 },
     { "name": "Genshin Impact",             "path": "Genshin Impact Game/GenshinImpact.exe",                "seconds": 910 },
     { "name": "Goddess of Victory: NIKKE",  "path": "Win64/nikke.exe",                                      "seconds": 910 },
@@ -44,6 +46,7 @@
     { "name": "Valorant",                   "path": "Win64/Valorant-Win64-Shipping.exe",                    "seconds": 910 },
     { "name": "Vindictus",                  "path": "Vindictus/Vindictus.exe",                              "seconds": 910 },
     { "name": "Where Winds Meet",           "path": "Win64r/wwm.exe",                                        "seconds": 910 },
+    { "name": "World Of Tanks: Heat",       "path": "WoT HEAT/wgcs_api.exe",                                "seconds": 910 },
     { "name": "World of Warcraft: Midnight","path": "World of Warcraft/_retail_/Wow.exe",                   "seconds": 910 },
     { "name": "Wuthering Waves",            "path": "Win64/Wuthering Waves.exe",                            "seconds": 910 }
   ]
