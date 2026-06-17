@@ -48,6 +48,11 @@
     { "name": "Where Winds Meet",           "path": "Win64r/wwm.exe",                                        "seconds": 910 },
     { "name": "World Of Tanks: Heat",       "path": "WoT HEAT/wgcs_api.exe",                                "seconds": 910 },
     { "name": "World of Warcraft: Midnight","path": "World of Warcraft/_retail_/Wow.exe",                   "seconds": 910 },
-    { "name": "Wuthering Waves",            "path": "Win64/Wuthering Waves.exe",                            "seconds": 910 }
+    { "name": "Wuthering Waves",            "path": "Win64/Wuthering Waves.exe",                            "seconds": 910 },
+    { "name": "The Mound: Omen of Cthulhu",            "path": "/The Mound Omen of Cthulhu/Binaries/Win64/TheMound-Win64-Shipping.exe",                            "seconds": 910 },
+    { "name": "Zenless Zone Zero",           "path": "/ZenlessZoneZero Game/ZenlessZoneZero.exe",                            "seconds": 910    },
+    { "name": "EMPULSE",           "path": "Win64/OrionClient-Win64-Shipping.exe",                            "seconds": 910    },
+    { "name": "GOALS",           "path": "/Steam/steamapps/common/GOALS/Game/Binaries/Win64/Goals.exe",                            "seconds": 910    },
+    { "name": "Warframe",           "path": "/Warframe/Warframe.exe",                            "seconds": 910    }    
   ]
 }
