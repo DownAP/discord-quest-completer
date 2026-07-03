@@ -53,6 +53,7 @@
     { "name": "Zenless Zone Zero",           "path": "/ZenlessZoneZero Game/ZenlessZoneZero.exe",                            "seconds": 910    },
     { "name": "EMPULSE",           "path": "Win64/OrionClient-Win64-Shipping.exe",                            "seconds": 910    },
     { "name": "GOALS",           "path": "/Steam/steamapps/common/GOALS/Game/Binaries/Win64/Goals.exe",                            "seconds": 910    },
-    { "name": "Warframe",           "path": "/Warframe/Warframe.exe",                            "seconds": 910    }    
+    { "name": "Warframe",           "path": "/Warframe/Warframe.exe",                            "seconds": 910    },
+    { "name": "GearUP",          "path": "/Gearup_ball.exe",                            "seconds": 910      }
   ]
 }
